@@ -8,22 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		3D8565261D3B6D0500481E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565251D3B6D0500481E86 /* AppDelegate.swift */; };
-		3D8565281D3B6D0500481E86 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3D8565271D3B6D0500481E86 /* GameScene.sks */; };
 		3D85652A1D3B6D0500481E86 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8565291D3B6D0500481E86 /* GameScene.swift */; };
 		3D85652C1D3B6D0500481E86 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D85652B1D3B6D0500481E86 /* GameViewController.swift */; };
 		3D85652F1D3B6D0500481E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D85652D1D3B6D0500481E86 /* Main.storyboard */; };
-		3D8565311D3B6D0500481E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D8565301D3B6D0500481E86 /* Assets.xcassets */; };
 		3D8565341D3B6D0500481E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8565321D3B6D0500481E86 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D8565221D3B6D0500481E86 /* SwiftrisJuliaAN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftrisJuliaAN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8565251D3B6D0500481E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D8565271D3B6D0500481E86 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		3D8565291D3B6D0500481E86 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3D85652B1D3B6D0500481E86 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3D85652E1D3B6D0500481E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3D8565301D3B6D0500481E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D8565331D3B6D0500481E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D8565351D3B6D0500481E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,11 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				3D8565251D3B6D0500481E86 /* AppDelegate.swift */,
-				3D8565271D3B6D0500481E86 /* GameScene.sks */,
 				3D8565291D3B6D0500481E86 /* GameScene.swift */,
 				3D85652B1D3B6D0500481E86 /* GameViewController.swift */,
 				3D85652D1D3B6D0500481E86 /* Main.storyboard */,
-				3D8565301D3B6D0500481E86 /* Assets.xcassets */,
 				3D8565321D3B6D0500481E86 /* LaunchScreen.storyboard */,
 				3D8565351D3B6D0500481E86 /* Info.plist */,
 			);
@@ -102,6 +96,7 @@
 				TargetAttributes = {
 					3D8565211D3B6D0500481E86 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = B6JP9KKYKG;
 					};
 				};
 			};
@@ -128,9 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D8565281D3B6D0500481E86 /* GameScene.sks in Resources */,
 				3D8565341D3B6D0500481E86 /* LaunchScreen.storyboard in Resources */,
-				3D8565311D3B6D0500481E86 /* Assets.xcassets in Resources */,
 				3D85652F1D3B6D0500481E86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,10 +250,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftrisJuliaAN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bloc.io.SwiftrisJuliaAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -268,10 +264,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftrisJuliaAN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bloc.io.SwiftrisJuliaAN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
